@@ -1,0 +1,68 @@
+#menu-telas p{
+	margin: 0px;
+    font-size: 12px;
+}
+
+.conjunto-telas{
+float: left;
+display: table;
+}
+
+#container-conteudos{
+}
+
+.telas-miniaturas{
+cursor: pointer;
+}
+
+#storyboard{
+background-color: #e0e0e0;
+left: 0px;
+min-height: 400px;
+margin-top: 400px;
+
+
+}
+
+input {
+border: 0;
+outline: 0;
+background: transparent;
+border-bottom: 2px solid black;
+width: 50%;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+
+}
+
+p{
+font-family: 'Roboto', sans-serif;	
+}
+h1{
+font-family: 'Roboto', sans-serif;
+
+}
+
+.subtitle{
+font-weight: bold;
+}
+
+.orange{
+color: #ff8000;	
+}
+
+.telas {
+padding: 5px;
+margin: 5px;
+}
+
+#menu-telas{
+
+}
+
+#menu-opcoes{
+
+
+}
