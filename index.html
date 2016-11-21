@@ -4,19 +4,22 @@
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="libs/jquery.fancybox.js"></script>
 <script src="js/jquery.table2excel.js"></script>
 <script src="js/main.js"></script>
 
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="libs//jquery.fancybox.css">
+
 
 </head>
 
 <body>
 
 <h1>Storyboard Builder</h1>
-<p class="subtitle">Digite um nome para o módulo:</p>
+<p class="subtitle">Nome do módulo:</p>
 <input type="text" name="fname"><br>
 <p class="subtitle orange"><br>Arraste as telas para a área abaixo para montar o seu Storyboard</p>
 
@@ -27,17 +30,17 @@
 <p class="subtitle">Telas Padrão </p>
     	<div id="tela1" class="telas">
 		<p>Abertura de módulo</p>
-		<img src="imgs/telas/padrao1.png" width="100px" class="telas-miniaturas" id="t1"></img>
+		<img src="imgs/telas/padrao1.png" width="100px" class="telas-miniaturas" id="tela1"></img>
 		</div>
 
 		<div id="tela2" class="telas">
 		<p>Objetivos do módulo</p>
-		<img src="imgs/telas/padrao2.png" width="100px" class="telas-miniaturas" id="t2"></img>
+		<img src="imgs/telas/padrao2.png" width="100px" class="telas-miniaturas" id="tela2"></img>
 		</div>
 
 		<div id="tela3" class="telas">
 		<p>Fechamento</p>
-		<img src="imgs/telas/padrao3.png" width="100px" class="telas-miniaturas" id="t3"></img>
+		<img src="imgs/telas/padrao3.png" width="100px" class="telas-miniaturas" id="tela3"></img>
 		
 		</div>
 </div>
@@ -49,22 +52,22 @@
 
 		<div id="tela2" class="telas">
 		<p>Conteúdo Alinhado a esquerda</p>
-		<img src="imgs/telas/conteudo1.png" width="100px" class="telas-miniaturas" id="t4"></img>
+		<img src="imgs/telas/conteudo1.png" width="100px" class="telas-miniaturas" id="tela4"></img>
 		</div>
 
 		<div id="tela2" class="telas">
 		<p>Conteúdo Alinhado a direita</p>
-		<img src="imgs/telas/conteudo2.png" width="100px" class="telas-miniaturas" id="t5"></img>
+		<img src="imgs/telas/conteudo2.png" width="100px" class="telas-miniaturas" id="tela5"></img>
 		</div>
 
 		<div id="tela2" class="telas">
 		<p>Conteúdo Alinhado a esquerda c/ box</p>
-		<img src="imgs/telas/conteudo4.png" width="100px" class="telas-miniaturas" id="t6"></img>
+		<img src="imgs/telas/conteudo4.png" width="100px" class="telas-miniaturas" id="tela6"></img>
 		</div>
 
 		<div id="tela2" class="telas">
 		<p>Conteúdo Alinhado a direita c/ box</p>
-		<img src="imgs/telas/conteudo3.png" width="100px" class="telas-miniaturas" id="t7"></img>
+		<img src="imgs/telas/conteudo3.png" width="100px" class="telas-miniaturas" id="tela7"></img>
 		</div>
 </div>
         
@@ -73,14 +76,14 @@
 
 		<div id="tela3" class="telas">
 		<p>Preencher Lacunas</p>
-		<img src="imgs/telas/atividade1.png" width="100px" class="telas-miniaturas" id="t8"></img>
+		<img src="imgs/telas/atividade1.png" width="100px" class="telas-miniaturas" id="tela8"></img>
 		
 			
 		</div>
 
 		<div id="tela2" class="telas">
 		<p>Múltipla-escolha</p>
-		<img src="imgs/telas/atividade2.png" width="100px" class="telas-miniaturas" id="t9"></img>
+		<img src="imgs/telas/atividade2.png" width="100px" class="telas-miniaturas" id="tela9"></img>
 		</div>
 
 		
@@ -90,15 +93,41 @@
 		
 </div>
 
+<div id="storyboard"> Arraste as telas para esta área
+<div id="telasSelecionadas">
+	<div id="t1" class="telas-selecionadas"></div>
+	<div id="t2" class="telas-selecionadas"></div>
+	<div id="t3" class="telas-selecionadas"></div>
+	<div id="t4" class="telas-selecionadas"></div>
+	<div id="t5" class="telas-selecionadas"></div>
+	<div id="t6" class="telas-selecionadas"></div>
+	<div id="t7" class="telas-selecionadas"></div>
+	<div id="t8" class="telas-selecionadas"></div>
+	<div id="t9" class="telas-selecionadas"></div>
+	<div id="t10" class="telas-selecionadas"></div>
+	<div id="t11" class="telas-selecionadas"></div>
+	<div id="t12" class="telas-selecionadas"></div>
+	<div id="t13" class="telas-selecionadas"></div>
+	<div id="t14" class="telas-selecionadas"></div>
+	<div id="t15" class="telas-selecionadas"></div>
+	<div id="t16" class="telas-selecionadas"></div>
+	<div id="t17" class="telas-selecionadas"></div>
+	<div id="t18" class="telas-selecionadas"></div>
+	<div id="t19" class="telas-selecionadas"></div>
+	<div id="t20" class="telas-selecionadas"></div>
+	<div id="t21" class="telas-selecionadas"></div>
+	<div id="t22" class="telas-selecionadas"></div>
+	<div id="t23" class="telas-selecionadas"></div>
+	<div id="t24" class="telas-selecionadas"></div>
+	<div id="t25" class="telas-selecionadas"></div>
+	<div id="t26" class="telas-selecionadas"></div>
+	<div id="t27" class="telas-selecionadas"></div>
+	<div id="t28" class="telas-selecionadas"></div>
+	<div id="t29" class="telas-selecionadas"></div>
+	<div id="t30" class="telas-selecionadas"></div>
+</div>
 
-
-
-
-
-
-
-
-<div id="storyboard"> Arraste as telas para esta área </div>
+</div>
 <div id="menu-opcoes">
 
 <button>Adicionar Tela</button>

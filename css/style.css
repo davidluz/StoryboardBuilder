@@ -1,6 +1,6 @@
 #menu-telas p{
-	margin: 0px;
-    font-size: 12px;
+margin: 0px;
+font-size: 12px;
 }
 
 .conjunto-telas{
@@ -13,6 +13,7 @@ display: table;
 
 .telas-miniaturas{
 cursor: pointer;
+z-index: 9999 !important;
 }
 
 #storyboard{
@@ -20,8 +21,6 @@ background-color: #e0e0e0;
 left: 0px;
 min-height: 400px;
 margin-top: 400px;
-
-
 }
 
 input {
@@ -59,10 +58,174 @@ margin: 5px;
 }
 
 #menu-telas{
-
 }
 
 #menu-opcoes{
+}
+
+.telas-selecionadas{
+background-color: gray;
+width: 100px;
+height: 51px;
+position: absolute;
+z-index: 9990;
+left: 0px;
+top: 0px;
+}
+
+#t1{
+left: 30px;
+top: 610px;
+}
+
+#t2{
+left: 150px;
+top: 610px;	
+}
+
+#t3{
+left: 270px;
+top: 610px;		
+}
+
+#t4{
+left: 390px;
+top: 610px;		
+}
+
+#t5{
+left: 510px;
+top: 610px;		
+}
+
+#t6{
+left: 630px;
+top: 610px;		
+}
+
+#t7{
+left: 750px;
+top: 610px;		
+}
+
+#t8{
+left: 870px;
+top: 610px;		
+}
+
+#t9{
+left: 990px;
+top: 610px;		
+}
+
+#t10{
+left: 1110px;
+top: 610px;		
+}
 
 
+#t11{
+left: 30px;
+top: 680px;
+}
+
+#t12{
+left: 150px;
+top: 680px;
+}
+
+#t13{
+left: 270px;
+top: 680px;	
+}
+
+#t14{
+left: 390px;
+top: 680px;		
+}
+
+#t15{
+left: 510px;
+top: 680px;	
+}
+
+#t16{
+left: 630px;
+top: 680px;		
+}
+
+#t17{
+left: 750px;
+top: 680px;
+}
+
+#t18{
+left: 870px;
+top: 680px;
+}
+
+#t19{
+left: 990px;
+top: 680px;	
+}
+
+#t20{
+left: 1110px;
+top: 680px;	
+}
+
+
+#t21{
+left: 30px;
+top: 750px;
+}
+
+#t22{
+left: 150px;
+top: 750px;
+}
+
+#t23{
+left: 270px;
+top: 750px;	
+}
+
+#t24{
+left: 390px;
+top: 750px;		
+}
+
+#t25{
+left: 510px;
+top: 750px;	
+}
+
+#t26{
+left: 630px;
+top: 750px;		
+}
+
+#t27{
+left: 750px;
+top: 750px;
+}
+
+#t28{
+left: 870px;
+top: 750px;
+}
+
+#t29{
+left: 990px;
+top: 750px;	
+}
+
+#t30{
+left: 1110px;
+top: 750px;	
+}
+
+
+.tela-editavel{
+	cursor: pointer;
 }
