@@ -13,7 +13,7 @@ display: table;
 
 .telas-miniaturas{
 cursor: pointer;
-z-index: 9999 !important;
+z-index: 9997 !important;
 }
 
 #storyboard{
@@ -55,6 +55,7 @@ color: #ff8000;
 .telas {
 padding: 5px;
 margin: 5px;
+z-index: 9997 !important;
 }
 
 #menu-telas{
@@ -72,6 +73,14 @@ z-index: 9990;
 left: 0px;
 top: 0px;
 }
+
+.fancybox-overlay{
+z-index: 9999!important;	
+}
+.fancybox-overlay-fixed{
+z-index: 9999!important;	
+}
+
 
 #t1{
 left: 30px;
