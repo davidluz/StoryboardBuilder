@@ -45,11 +45,40 @@ $( ".telas-selecionadas" ).droppable({
 	telaAlterada = telaAlterada.substring(0,8);
 
   var formato1 = '<div class="stb-cabecalhos" >M1Tela 1</div> <div class="stb-telas" contenteditable="true"><p>Bem-vindo ao curso</p> <h1>Título do curso </h1> <p>Neste curso você vai aprender...</p><p>Iniciar curso</p> <div>';
+  
+// ABAIXO ESTÁ ESTRATURA DA TABELA QUE SERÁ EXPORTADA - IMPORTANTE - TELA EXPORTADA SERÁ DIFERENTE DA VISUALIZADA.
+  var formato2 = `<table border="1">
+<tbody>
+<tr>
+<td colspan="2" width="992">
+<p><strong>M1T1Tela1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="743">
+<p><strong>CONTE&Uacute;DO DA TELA</strong></p>
+</td>
+<td width="324">
+<p><strong>ORIENTA&Ccedil;&Otilde;ES PARA PRODU&Ccedil;&Atilde;O</strong></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="657">
+</td>
+<td width="324">
+</td>
+</tr>
+<tr>
+
+</tr>
+</tbody>
+</table>
+<br clear="all" style="page-break-before:always" />
+`
 
 
+$(telaAlterada).html(formato2);
 
-    $(telaAlterada).html(formato1);
-   //$(telaAlterada).html(eval("formato"+dragID));
 	 
 
     }
