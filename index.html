@@ -1,3 +1,4 @@
+<!DOCTYPE html> 
 <html>
 <head>
 <meta charset="UTF-8">
@@ -7,20 +8,19 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="libs/jquery.fancybox.js"></script>
-<script src="js/jquery.table2excel.js"></script>
+<script src="js/FileSaver.js"></script>
+<script src="js/jquery.wordexport.js"></script>
+
+
+
 <script src="js/main.js"></script>
-
-
-
-
-
 </head>
 
 <body>
 
 <h1>Storyboard Builder</h1>
 <p class="subtitle">Nome do módulo:</p>
-<input type="text" name="fname"><br>
+<input type="text" name="fname" value="00N-16.STB.C.N.moduloN"><br>
 <p class="subtitle orange"><br>Arraste as telas para a área abaixo para montar o seu Storyboard</p>
 
 <div id="menu-telas">
@@ -91,7 +91,7 @@
 		</div>
 </div>
 		
-</div>
+
 
 <div id="storyboard"> Arraste as telas para esta área
 <div id="telasSelecionadas">
@@ -131,41 +131,44 @@
 <div id="menu-opcoes">
 
 
-<button>Adicionar Tela</button>
-<button>Gerar Storyboard</button>
+
+<button id="wordGenerator">Gerar Storyboard</button>
 <button>Gerar Estrutura</button>
 </div>
 
-<div id="ctn-t1" style="display:none;"> 1</div>
-<div id="ctn-t2" style="display:none;"> 2</div>
-<div id="ctn-t3" style="display:none;"> 3</div>
-<div id="ctn-t4" style="display:none;"> 4</div>
-<div id="ctn-t5" style="display:none;"> 5</div>
-<div id="ctn-t6" style="display:none;"> 6</div>
-<div id="ctn-t7" style="display:none;"> 7</div>
-<div id="ctn-t8" style="display:none;"> 8</div>
-<div id="ctn-t9" style="display:none;"> 9</div>
-<div id="ctn-t10" style="display:none;"> 10</div>
-<div id="ctn-t11" style="display:none;"> 11</div>
-<div id="ctn-t12" style="display:none;"> 12</div>
-<div id="ctn-t13" style="display:none;"> 13</div>
-<div id="ctn-t14" style="display:none;"> 14</div>
-<div id="ctn-t15" style="display:none;"> 15</div>
-<div id="ctn-t16" style="display:none;"> 16</div>
-<div id="ctn-t17" style="display:none;"> 17</div>
-<div id="ctn-t18" style="display:none;"> 18</div>
-<div id="ctn-t19" style="display:none;"> 19</div>
-<div id="ctn-t20" style="display:none;"> 20</div>
-<div id="ctn-t21" style="display:none;"> 21</div>
-<div id="ctn-t22" style="display:none;"> 22</div>
-<div id="ctn-t23" style="display:none;"> 23</div>
-<div id="ctn-t24" style="display:none;"> 24</div>
-<div id="ctn-t25" style="display:none;"> 25</div>
-<div id="ctn-t26" style="display:none;"> 26</div>
-<div id="ctn-t27" style="display:none;"> 27</div>
-<div id="ctn-t28" style="display:none;"> 28</div>
-<div id="ctn-t29" style="display:none;"> 29</div>
-<div id="ctn-t30" style="display:none;"> 30</div>
+
+<div id="todas-as-telas"></div>
+<div id="ctn-t1" style="display:none;">tela vazia</div>
+<div id="ctn-t2" style="display:none;">tela vazia</div>
+<div id="ctn-t3" style="display:none;">tela vazia</div>
+<div id="ctn-t4" style="display:none;">tela vazia</div>
+<div id="ctn-t5" style="display:none;">tela vazia</div>
+<div id="ctn-t6" style="display:none;">tela vazia</div>
+<div id="ctn-t7" style="display:none;">tela vazia</div>
+<div id="ctn-t8" style="display:none;">tela vazia</div>
+<div id="ctn-t9" style="display:none;">tela vazia</div>
+<div id="ctn-t10" style="display:none;">tela vazia</div>
+<div id="ctn-t11" style="display:none;">tela vazia</div>
+<div id="ctn-t12" style="display:none;">tela vazia</div>
+<div id="ctn-t13" style="display:none;">tela vazia</div>
+<div id="ctn-t14" style="display:none;">tela vazia</div>
+<div id="ctn-t15" style="display:none;">tela vazia</div>
+<div id="ctn-t16" style="display:none;">tela vazia</div>
+<div id="ctn-t17" style="display:none;">tela vazia</div>
+<div id="ctn-t18" style="display:none;">tela vazia</div>
+<div id="ctn-t19" style="display:none;">tela vazia</div>
+<div id="ctn-t20" style="display:none;">tela vazia</div>
+<div id="ctn-t21" style="display:none;">tela vazia</div>
+<div id="ctn-t22" style="display:none;">tela vazia</div>
+<div id="ctn-t23" style="display:none;">tela vazia</div>
+<div id="ctn-t24" style="display:none;">tela vazia</div>
+<div id="ctn-t25" style="display:none;">tela vazia</div>
+<div id="ctn-t26" style="display:none;">tela vazia</div>
+<div id="ctn-t27" style="display:none;">tela vazia</div>
+<div id="ctn-t28" style="display:none;">tela vazia</div>
+<div id="ctn-t29" style="display:none;">tela vazia</div>
+<div id="ctn-t30" style="display:none;">tela vazia</div>
+
 <script type="text/javascript">
 
 </script>
@@ -177,4 +180,4 @@
 </script>	
 
 
-<html>
+</html>

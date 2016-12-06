@@ -10,13 +10,12 @@ var dataDeProducao = "00/00/00";
 var versao = 0;
 var telasSelecionadas = [];
 
-
 $(document).ready(function(){
 
-
-
-//Teste para gerar tela
-var teste = new GeradorDeTela(1,2,3,4,5);
+ $("#wordGenerator").click(function(event) {
+  geraStoryboardCompleto();
+ $("#todas-as-telas").wordExport('00N-16.STB.C.N.moduloN');
+ });
 
 
 $( function() {
@@ -27,22 +26,34 @@ $( function() {
 
 
 $( ".telas-selecionadas" ).droppable({
+	
     drop: function( event, ui ) {
 
     var dragID = $(ui.draggable).attr("id"); 
+	var dragIMG = $(ui.draggable).find("img").attr('src');
     dragID = dragID.substring(4,5);
-    console.log(dragID);  
-    var miniaturaSelecionada = "#t"+dragID;
-    var telaSelecionada = "#ctn-t"+dragID;
+	// Esta funcionando 
+     var telaSelecionada = "#ctn-t"+dragID;
 
-    //Altera miniatura
-   // $(this).html("<p>teste</p>");
-   // $(telaSelecionada).html("<p>teste final</p>");
+    //Altera miniatura selecionada
+    $(this).html('<img src='+dragIMG+' width="100px">');
+	
 
     //Altera conteúdo da tela
+	var droppableId = $(this).attr("id");
+	var telaAlterada = "#ctn-"+$(this).attr("id");
+	telaAlterada = telaAlterada.substring(0,8);
 
+  var formato1 = '<div class="stb-cabecalhos" >M1Tela 1</div> <div class="stb-telas" contenteditable="true"><p>Bem-vindo ao curso</p> <h1>Título do curso </h1> <p>Neste curso você vai aprender...</p><p>Iniciar curso</p> <div>';
+
+
+
+    $(telaAlterada).html(formato1);
+   //$(telaAlterada).html(eval("formato"+dragID));
+	 
 
     }
+	
 });
 
 $("#t1").click(function(){  
@@ -167,16 +178,24 @@ $.fancybox("#ctn-t30");
 
 });
 
+function geraStoryboardCompleto(){
+for(i=1; i<=30; i++){
+$("#todas-as-telas").html();
+var telaDaVez = '#ctn-t'+i;
+var comparador = $(telaDaVez).html();
+if(comparador!="tela vazia"){  
+$("#todas-as-telas").append(comparador);
+}
+
+
+
+}
+
+
+}
 
 
 
 //Classe geradora de Tela 
-var GeradorDeTela = function(id,conteudo,descricaoImagem, orientacoes,anexos){
-  this.id = id;
-  this.conteudo = conteudo;
-  this.descricaoImagem = descricaoImagem;
-  this.orientacoes = orientacoes;
-  this.anexos = anexos; 
-}
 
 

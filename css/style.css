@@ -238,3 +238,36 @@ top: 750px;
 .tela-editavel{
 	cursor: pointer;
 }
+
+
+.stb-telas{
+width: 743px;
+height: 379px;
+border-style: solid;
+border-width: thin;
+text-align: center;
+vertical-align: middle;
+line-height: 60px;
+}
+
+.stb-telas p{
+font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
+font-size: 14px;
+}
+
+.stb-telas h1{
+font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
+font-size: 20px;
+}
+
+.stb-cabecalhos{
+width: 743px;
+height: 20px;
+border-style: solid;
+border-width: thin;
+background-color: #a6a6a6;	
+}
+
+#todas-as-telas{
+	display: none;
+}
