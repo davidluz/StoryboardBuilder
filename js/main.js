@@ -54,6 +54,7 @@ $( ".telas-selecionadas" ).droppable({
 <p><strong>M1T1Tela1</strong></p>
 </td>
 </tr>
+
 <tr>
 <td width="743">
 <p><strong>CONTE&Uacute;DO DA TELA</strong></p>
@@ -64,24 +65,22 @@ $( ".telas-selecionadas" ).droppable({
 </tr>
 <tr>
 <td rowspan="2" width="657">
+<p>conteúdo</p>
 </td>
-<td width="324">
+<td rowspan="2" width="324">
+<p>1.</p>
 </td>
-</tr>
-<tr>
-
 </tr>
 </tbody>
 </table>
 <br clear="all" style="page-break-before:always" />
 `
 
-
 $(telaAlterada).html(formato2);
 
 	 
 
-    }
+ }
 	
 });
 
