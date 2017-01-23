@@ -9,47 +9,9 @@ var numeroDeLaudas = 0;
 var dataDeProducao = "00/00/00";
 var versao = 0;
 var telasSelecionadas = [];
-
-$(document).ready(function(){
-
- $("#wordGenerator").click(function(event) {
-  geraStoryboardCompleto();
- $("#todas-as-telas").wordExport('00N-16.STB.C.N.moduloN');
- });
-
-
-$( function() {
-  $( ".telas" ).draggable({
-    	revert: true
-    });
-  } );	
-
-
-$( ".telas-selecionadas" ).droppable({
-	
-    drop: function( event, ui ) {
-
-    var dragID = $(ui.draggable).attr("id"); 
-	var dragIMG = $(ui.draggable).find("img").attr('src');
-    dragID = dragID.substring(4,5);
-	// Esta funcionando 
-     var telaSelecionada = "#ctn-t"+dragID;
-
-    //Altera miniatura selecionada
-    $(this).html('<img src='+dragIMG+' width="100px">');
-	
-
-    //Altera conteúdo da tela
-	var droppableId = $(this).attr("id");
-	var telaAlterada = "#ctn-"+$(this).attr("id");
-	telaAlterada = telaAlterada.substring(0,8);
-
-  var formato1 = '<div class="stb-cabecalhos" >M1Tela 1</div> <div class="stb-telas" contenteditable="true"><p>Bem-vindo ao curso</p> <h1>Título do curso </h1> <p>Neste curso você vai aprender...</p><p>Iniciar curso</p> <div>';
-  
-// ABAIXO ESTÁ ESTRATURA DA TABELA QUE SERÁ EXPORTADA - IMPORTANTE - TELA EXPORTADA SERÁ DIFERENTE DA VISUALIZADA.
-  var formato2 = `<table border="1">
+var storyboardVazio = `<table border="1" id="tabeladinamica">
 <tbody>
-<tr>
+<tr="coluna1">
 <td colspan="2" width="992">
 <p><strong>M1T1Tela1</strong></p>
 </td>
@@ -74,15 +36,60 @@ $( ".telas-selecionadas" ).droppable({
 </tbody>
 </table>
 <br clear="all" style="page-break-before:always" />
-`
+`;
+var storyboardVazioHTML = $(storyboardVazio);
 
-$(telaAlterada).html(formato2);
+$(document).ready(function(){
+$("#todas-as-telas").show(); // mostrando temporariamente
+$("#wordGenerator").click(function(event) {
+geraStoryboardCompleto();
+$("#todas-as-telas").wordExport('00N-16.STB.C.N.moduloN');
+});
+
+
+$( function() {
+  $( ".telas" ).draggable({
+    	revert: true
+   });
+});	
+
+
+$( ".telas-selecionadas" ).droppable({
+drop: function( event, ui ) {
+var dragID = $(ui.draggable).attr("id"); 
+var dragIMG = $(ui.draggable).find("img").attr('src');
+dragID = dragID.substring(4,5);
+// Esta funcionando 
+var telaSelecionada = "#ctn-t"+dragID;
+
+ //Altera miniatura selecionada
+$(this).html('<img src='+dragIMG+' width="100px">');
+//Altera conteúdo da tela
+var droppableId = $(this).attr("id");
+var telaAlterada = "#ctn-"+$(this).attr("id");
+telaAlterada = telaAlterada.substring(0,8);
+
+var formato1 = `<div id="capa-de-curso" class="telas-template" contenteditable="true">
+<h1 class="centralizado" class="conteudo">Bem-vindo ao curso<br> Compras Governamentais</h1>
+<p class="centralizado" class="conteudo">Neste curso, você vai conhecer uma forma eficaz de incentivo aos pequenos negócios locais, prevista em lei, para estimular o crescimento de seu município.<br><br><br><button class="centralizado">Iniciar curso</button>	</p>
+</div>
+<div id="orientacaos" contenteditable="true"><h3>Orientações</h3><p> 1. Texto da orientação</p></div>
+<h3>Descrição da imagem</h3>
+<p>Inserir imagem de fundo que dê a ideia de...</p>
+
+`;
+  
+
+
+$(telaAlterada).html(formato1);
 
 	 
 
  }
 	
 });
+
+
 
 $("#t1").click(function(){  
 $.fancybox("#ctn-t1");
@@ -206,22 +213,36 @@ $.fancybox("#ctn-t30");
 
 });
 
+
+// Função responsável por montar o Storyboard no WORD 
 function geraStoryboardCompleto(){
 for(i=1; i<=30; i++){
 $("#todas-as-telas").html();
 var telaDaVez = '#ctn-t'+i;
 var comparador = $(telaDaVez).html();
+
+// Verifica qual o tipo da tela e monta o Storyboard versão word
 if(comparador!="tela vazia"){  
-$("#todas-as-telas").append(comparador);
+$("#todas-as-telas").append(storyboardVazio);
+modificaConteudoTela("tabeladinamica","coluna1","0","teste");
 }
 
 
 
-}
 
 
 }
 
+
+}
+
+
+
+
+function modificaConteudoTela(tableId, rowId, colNum, newValue)
+{
+    $('#'+tableId).find('tr#'+rowId).find('td:eq(colNum)').html(newValue);
+};
 
 
 //Classe geradora de Tela 
