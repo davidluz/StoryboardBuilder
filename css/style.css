@@ -1,314 +1,59 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic);
 
-
+/*Base*/
 
 body{
-font-family:'Fira Sans',Tahoma,Arial,sans-serif;
+
+	font-family:'Fira Sans',Tahoma,Arial,sans-serif;
 }
 
-.telas-template button{
-padding: 1.25rem 2.5rem;
-background-color: #FF8000;
-font-size: 1.125rem;
-border: none;
-color: white;
+button{
+	
+	padding: 1.25rem 2.5rem;
+	background-color: #FF8000;
+	font-size: 1.125rem;
+	border: none;
+	color: white;
 }
-.telas-template{
-margin: 0px;
-width: 990px;
-height: 470px;
-padding: 10px;
-color: white;
+
+#layout-container{
+	max-width: 990px; 
+}
+
+.telas{
+	
+	margin: 0px;
+	width:  990px;
+	height: 470px;
+	padding: 10px;
+	color: white;
+
 }
 
 #capa-de-curso{
-background-image: url("../imgs/fundo1.png");
+	background-image: url("../imgs/fundo1.png");
 }
 
-.telas-template h1{
+#capa-de-curso h1{
 	margin-top: 120px;
 }
 
-.telas-template .centralizado{
-text-align: center;
-vertical-align: center;
+.centralizado{
+	text-align: center;
+	vertical-align: center;
 }	
 
-
-#menu-telas p{
-margin: 0px;
-font-size: 12px;
-}
-
-.conjunto-telas{
-float: left;
-display: table;
-}
-
-#container-conteudos{
-}
-
-.telas-miniaturas{
-cursor: pointer;
-z-index: 9997 !important;
-}
-
-#storyboard{
-background-color: #e0e0e0;
-left: 0px;
-min-height: 400px;
-margin-top: 400px;
-}
-
-input {
-border: 0;
-outline: 0;
-background: transparent;
-border-bottom: 2px solid black;
-width: 50%;
-}
-
-body{
-font-family: 'Roboto', sans-serif;
-
+#btnHome{
+    margin-left: 410px;
+    margin-top: -200px;
 }
 
 p{
-font-family: 'Roboto', sans-serif;	
-}
-h1{
-font-family: 'Roboto', sans-serif;
 
+	line-height: 30px;
 }
 
-.subtitle{
-font-weight: bold;
-}
-
-.orange{
-color: #ff8000;	
-}
-
-.telas {
-padding: 5px;
-margin: 5px;
-z-index: 9997 !important;
-}
-
-#menu-telas{
-}
-
-#menu-opcoes{
-}
-
-.telas-selecionadas{
-background-color: gray;
-width: 100px;
-height: 51px;
-position: absolute;
-z-index: 9990;
-left: 0px;
-top: 0px;
-}
-
-.fancybox-overlay{
-z-index: 9999!important;	
-}
-.fancybox-overlay-fixed{
-z-index: 9999!important;	
-}
-
-
-#t1{
-left: 30px;
-top: 610px;
-}
-
-#t2{
-left: 150px;
-top: 610px;	
-}
-
-#t3{
-left: 270px;
-top: 610px;		
-}
-
-#t4{
-left: 390px;
-top: 610px;		
-}
-
-#t5{
-left: 510px;
-top: 610px;		
-}
-
-#t6{
-left: 630px;
-top: 610px;		
-}
-
-#t7{
-left: 750px;
-top: 610px;		
-}
-
-#t8{
-left: 870px;
-top: 610px;		
-}
-
-#t9{
-left: 990px;
-top: 610px;		
-}
-
-#t10{
-left: 1110px;
-top: 610px;		
-}
-
-
-#t11{
-left: 30px;
-top: 680px;
-}
-
-#t12{
-left: 150px;
-top: 680px;
-}
-
-#t13{
-left: 270px;
-top: 680px;	
-}
-
-#t14{
-left: 390px;
-top: 680px;		
-}
-
-#t15{
-left: 510px;
-top: 680px;	
-}
-
-#t16{
-left: 630px;
-top: 680px;		
-}
-
-#t17{
-left: 750px;
-top: 680px;
-}
-
-#t18{
-left: 870px;
-top: 680px;
-}
-
-#t19{
-left: 990px;
-top: 680px;	
-}
-
-#t20{
-left: 1110px;
-top: 680px;	
-}
-
-
-#t21{
-left: 30px;
-top: 750px;
-}
-
-#t22{
-left: 150px;
-top: 750px;
-}
-
-#t23{
-left: 270px;
-top: 750px;	
-}
-
-#t24{
-left: 390px;
-top: 750px;		
-}
-
-#t25{
-left: 510px;
-top: 750px;	
-}
-
-#t26{
-left: 630px;
-top: 750px;		
-}
-
-#t27{
-left: 750px;
-top: 750px;
-}
-
-#t28{
-left: 870px;
-top: 750px;
-}
-
-#t29{
-left: 990px;
-top: 750px;	
-}
-
-#t30{
-left: 1110px;
-top: 750px;	
-}
-
-
-.tela-editavel{
-	cursor: pointer;
-}
-
-
-.stb-telas{
-width: 743px;
-height: 379px;
-border-style: solid;
-border-width: thin;
-text-align: center;
-vertical-align: middle;
-}
-
-.stb-telas p{
-font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
-font-size: 14px;
-}
-
-.stb-telas h1{
-font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
-font-size: 20px;
-}
-
-.stb-cabecalhos{
-width: 743px;
-height: 20px;
-border-style: solid;
-border-width: thin;
-background-color: #a6a6a6;	
-}
-
-#todas-as-telas{
-	display: none;
-}
-
-.highlight{
-	background-color: yellow;
+h3{
+font-size: 16px;	
 }
