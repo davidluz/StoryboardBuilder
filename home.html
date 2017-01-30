@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
+<link rel="stylesheet" href="libs/jquery.fancybox.css">
+<script src="libs/jquery.fancybox.js"></script>
+<title>Gerador de Storyboard</title>
+
+</head>
+
+<body>
+<div id="home-container">
+<h1>Gerador de Storyboards</h1>
+<button id="btn_novo" class="btn waves-effect waves-light btn-inicio" > Novo Storyboard</button> <br><br>
+<button id="btn_continuar" class="btn waves-effect waves-light btn-inicio" > Continuar uma edição</button><br><br>
+<button id="btn_modelo" class="btn waves-effect waves-light btn-inicio" > Gerar modelo a partir de mapa de conteúdos</button><br><br>
+
+<p>v.1.0</p>
+<a href="notas.html">Notas da versão</a>
+</div>
+<div id="form_inicial">
+	<h3>Dados iniciais</h3>
+	
+
+	<label>Número da demanda:</label> <input type="text" name="FirstName" value=""><br>
+	<label>Nome do curso:</label> <input type="text" name="LastName" value=""><br>
+	<label>Módulo Nº:</label> <input type="text" name="LastName" value=""><br>
+	<label>Objetivo do Módulo: </label><input type="text" name="LastName" value="" rows="5"><br><br>
+	<label>Modelo:</label>
+    <select>
+    <option value="Abertura">Abertura</option>
+    <option value="Abertura">Intermediário</option>
+   <option value="Abertura">Fechamento</option>
+   <option value="Abertura">Vazio</option>
+  </select><br><br>
+
+	
+
+<button id="volta_inicio" class="btn waves-effect waves-light" >Voltar</button>
+<button id="inicia_stb" class="btn waves-effect waves-light" >Começar!</button>
+
+</div>
+
+</body>
+
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/Storyboard.js"></script>
+<script src="js/main.js"></script>
+</html>

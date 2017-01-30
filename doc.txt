@@ -1,0 +1,17 @@
+Documentação 
+
+Scripts
+
+Main.js
+Monta a tela
+
+Classes 
+Storyboard
+Responsável por manter a lógica de criação do Storyboard
+Cria um novo objeto do tipo Storyboard
+
+Atributos:
+Curso  - String com o nome do curso
+Módulo - Integer com o número do módulo 
+Telas  - 
+

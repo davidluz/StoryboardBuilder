@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <script src="../js/jquery-3.1.1.slim.min.js"></script>
-
 <link rel="stylesheet" href="../css/style.css">
 <title>Modelo 1</title>
 </head>
@@ -13,19 +12,23 @@
 	<div class="layout-container">
 	<div id="capa-de-curso" class="telas">
 		
-		<h1 class="centralizado" contenteditable="true" id="element1">Bem-vindo ao curso<br> {{Nome do curso}}</h1>
-			<p class="centralizado" contenteditable="true" id="element2">Neste curso, você vai {{Objetivo do curso}}<br><br><br>
+		<h1 class="centralizado" contenteditable="true" id="element0">Bem-vindo ao curso<br> {{Nome do curso}}</h1>
+		<p class="centralizado" contenteditable="true" id="element1">Neste curso, você vai {{Objetivo do curso}}<br><br><br>
+		</p>
+		<button id="btnHome"class="centralizado" onclick="logDeMontagem();">Iniciar curso</button>			
 
-			</p>
-			<button id="btnHome"class="centralizado" contenteditable="true" id="element3" onclick="logDeMontagem();">Iniciar curso</button>			
 	</div>
 	<div id="orientacoes">
-	<h3>Orientações Gerais:</h3>
-		<p contenteditable="true" id="orienta1" id="element4">1.</p>
-	<h3>Descrição das imagens</h3>
-	<p contenteditable="true" id="orienta2" id="element5">1.</p>
+		<h3>Orientações Gerais:</h3>
+		<p contenteditable="true"  id="element2">1. Aplicar diagramação padrão de tela de abertura de curso.</p>
+		<h3>Descrição das imagens</h3>
+		<p contenteditable="true"  id="element3">2. Inserir imagem de fundo que dê a ideia de {{inserir informação}}. Referência: shutterstock ID:{{id da imagem}} </p>
 		
 	</div>
+
+	<button>Voltar</button>
+	<button>Salvar</button>
+
 	</div>
 <script src="../js/html2table.js"></script>
 <script src="../js/main.js"></script>	

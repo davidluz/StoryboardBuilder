@@ -2,22 +2,50 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic);
 
 /*Base*/
-
 body{
-
-	font-family:'Fira Sans',Tahoma,Arial,sans-serif;
+font-family:'Fira Sans',Tahoma,Arial,sans-serif;
+background-image: url('../imgs/bg1.jpg');
+color: white;
 }
 
 button{
-	
+
+}
+
+#home-container{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	margin: 0px; 
+	text-align: center;
+     
+}
+
+
+
+/*button{
+	font-family:'Fira Sans';
 	padding: 1.25rem 2.5rem;
 	background-color: #FF8000;
 	font-size: 1.125rem;
 	border: none;
 	color: white;
-}
+	cursor: pointer;
+	margin:auto;
+}*/
 
-#layout-container{
+/*.btn-style1{
+	background-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	cursor: pointer;
+	display: block;
+	margin-top: 10px;
+	width: 300px;
+}	*/
+
+#layout-container {
 	max-width: 990px; 
 }
 
@@ -28,6 +56,8 @@ button{
 	height: 470px;
 	padding: 10px;
 	color: white;
+	border-style: solid;
+	border-color: white;
 
 }
 
@@ -56,4 +86,107 @@ p{
 
 h3{
 font-size: 16px;	
+}
+
+#orientacoes{
+	color: #000;
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width:  990px;
+	border-style: dashed;
+	border-width: thin;
+	border-width: 1px;
+
+
+}
+
+.telas {
+padding: 5px;
+margin: 5px;
+z-index: 9997 !important;
+}
+
+#menu-telas{
+}
+
+#menu-opcoes{
+}
+
+.telas-selecionadas{
+background-color: gray;
+width: 100px;
+height: 51px;
+position: absolute;
+z-index: 9990;
+left: 0px;
+top: 0px;
+}
+
+.fancybox-overlay{
+z-index: 9999!important;	
+}
+.fancybox-overlay-fixed{
+z-index: 9999!important;	
+}
+
+
+
+
+
+.tela-editavel{
+	cursor: pointer;
+}
+
+
+.stb-telas{
+width: 743px;
+height: 379px;
+border-style: solid;
+border-width: thin;
+text-align: center;
+vertical-align: middle;
+}
+
+.stb-telas p{
+font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
+font-size: 14px;
+}
+
+.stb-telas h1{
+font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
+font-size: 20px;
+}
+
+.stb-cabecalhos{
+width: 743px;
+height: 20px;
+border-style: solid;
+border-width: thin;
+background-color: #a6a6a6;	
+}
+
+#todas-as-telas{
+	display: none;
+}
+
+.highlight{
+	background-color: yellow;
+}
+
+#form_inicial{
+background-color: #fff;
+color: black;
+
+opacity: 0.9;
+display:none;
+}
+
+#home-container a{
+	color: "#fff" !important;
+}
+
+#home-container a:visited{
+	color: "#fff" !important;
 }
