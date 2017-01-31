@@ -1,5 +1,5 @@
 console.log("Main inicializado");
-var teste = createStoryboard('gestão de projetos', '1', '30');
+var storyboard = createStoryboard();
 
 
 $("#btn_novo").fancybox({
@@ -15,9 +15,6 @@ $("#btn_novo").fancybox({
 
 
 
-$("#btn_continuar").click(function(){
-saveSTB();
-});
 
 
 
@@ -25,17 +22,21 @@ saveSTB();
 // Lógica da Persistência - Retirar Daqui
 
 function saveSTB(){
-var stb_local = teste;
+var stb_local = storyboard;
 localStorage.setItem('stb_local', JSON.stringify(stb_local));
-var retrievedObject = localStorage.getItem('stb_local');
-console.log('objeto gravado: ', JSON.parse(retrievedObject));
-
 }
 
 
 
 $("#inicia_stb").click(function(){
+storyboard.demanda =  $("input[name=stb-demanda]").val();
+storyboard.curso =    $("input[name=stb-curso]").val();
+storyboard.modulo =   $("input[name=stb-modulo]").val();
+storyboard.objetivo = $("input[name=stb-objetivo]").val();
+storyboard.modelo =   $( "#stb-modelo" ).val();
+saveSTB();
 window.open("builder.html", "_self");
+
 });
 
 
