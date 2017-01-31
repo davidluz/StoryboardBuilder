@@ -15,3 +15,12 @@ Curso  - String com o nome do curso
 Módulo - Integer com o número do módulo 
 Telas  - 
 
+A interface ainda não é responsiva.O recurso foi testado e funciona
+bem em telas com as seguintes resoluções:
+
+1280 x 1024 
+1366 x 768
+
+- Recomendado o uso do Navegador Chrome
+
+

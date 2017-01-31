@@ -2,22 +2,106 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="js/jquery-3.1.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
-<link rel="stylesheet" href="css/style.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
+<link rel="stylesheet" href="libs/jquery.fancybox.css">
+<script src="libs/jquery.fancybox.js"></script>
 <title>Gerador de Storyboard</title>
 
 </head>
 
 <body>
-<div id="home-container">
-<h1>Teste</h1>
+<div id="builder-container">
+<h4>Arraste as telas para montar o Storyboard</h4>
+<h5>Modelos disponíveis</h5>
 
+<div id="modelos-disponiveis">
+	
+	<div id="modelo1"  class="modelos-de-tela draggable"></div>
+	<div id="modelo2"  class="modelos-de-tela draggable"></div>
+	<div id="modelo3"  class="modelos-de-tela draggable"></div>
+	<div id="modelo4"  class="modelos-de-tela draggable"></div>
+	<div id="modelo5"  class="modelos-de-tela draggable"></div>
+	<div id="modelo6"  class="modelos-de-tela draggable"></div>
+	<div id="modelo7"  class="modelos-de-tela draggable"></div>
+	<div id="modelo8"  class="modelos-de-tela draggable"></div>
+	<div id="modelo9"  class="modelos-de-tela draggable"></div>
+	<div id="modelo10" class="modelos-de-tela draggable"></div>
+	<div id="modelo11" class="modelos-de-tela draggable"></div>
+	<div id="modelo12" class="modelos-de-tela draggable"></div>
+	<div id="modelo13" class="modelos-de-tela draggable"></div>
+	<div id="modelo14" class="modelos-de-tela draggable"></div>
+	<div id="modelo15" class="modelos-de-tela draggable"></div>
+	<div id="modelo16" class="modelos-de-tela draggable"></div>
+	<div id="modelo17" class="modelos-de-tela draggable"></div>
+	<div id="modelo18" class="modelos-de-tela draggable"></div>
+	<div id="modelo19" class="modelos-de-tela draggable"></div>
+	<div id="modelo20" class="modelos-de-tela draggable"></div>
+
+</div>
+
+<div id="esqueleto-stb">
+	<div id="drop1" class="drops"></div>
+	<div id="drop2" class="drops"></div>
+	<div id="drop3" class="drops"></div>
+	<div id="drop4" class="drops"></div>
+	<div id="drop5" class="drops"></div>
+	<div id="drop6" class="drops"></div>
+	<div id="drop7" class="drops"></div>
+	<div id="drop8" class="drops"></div>
+	<div id="drop9" class="drops"></div>
+	<div id="drop10" class="drops"></div>
+	<div id="drop11" class="drops"></div>
+	<div id="drop12" class="drops"></div>
+	<div id="drop13" class="drops"></div>
+	<div id="drop14" class="drops"></div>
+	<div id="drop15" class="drops"></div>
+	<div id="drop16" class="drops"></div>
+	<div id="drop17" class="drops"></div>
+	<div id="drop18" class="drops"></div>
+	<div id="drop19" class="drops"></div>
+	<div id="drop20" class="drops"></div>
+	<div id="drop21" class="drops"></div>
+	<div id="drop22" class="drops"></div>
+	<div id="drop23" class="drops"></div>
+	<div id="drop24" class="drops"></div>
+	<div id="drop25" class="drops"></div>
+	<div id="drop26" class="drops"></div>
+	<div id="drop27" class="drops"></div>
+	<div id="drop28" class="drops"></div>
+	<div id="drop29" class="drops"></div>
+	<div id="drop30" class="drops"></div>
+</div>
+
+<div id="controles">
+<button id="btn-salvar" class="btn waves-effect waves-light">Salvar Projeto</button>
+<button id="btn-limpar" class="btn waves-effect waves-light" >Limpar</button>
+
+<button id="btn-doc" class="btn waves-effect waves-light" >Exportar (.doc)</button><br><br>
+<button id="btn-pdf" class="btn waves-effect waves-light" >Exportar (.pdf)</button>
+<button id="btn-contagem" class="btn waves-effect waves-light" >Contagem de Telas</button>
+<button id="btn-voltar" class="btn waves-effect waves-light" >Voltar</button>
+</div>
+
+</div>
+<script>
+	
+
+</script>
 
 </body>
 
 
-
+<link rel="stylesheet" href="css/style.css">
 <script src="js/Storyboard.js"></script>
+
 <script src="js/main.js"></script>
+<script src="js/builder.js"></script>
 </html>
