@@ -17,8 +17,7 @@ button{
 	height: 100%;
 	border: 0px;
 	margin: 0px; 
-	text-align: center;
-     
+	text-align: center;   
 }
 
 
@@ -217,7 +216,7 @@ display:none;
 	margin: 10px;
 	float: left;
 	display: inline;
-	
+	cursor: pointer;
 }
 
 #esqueleto-stb{

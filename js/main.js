@@ -1,4 +1,4 @@
-console.log("Main inicializado");
+
 var storyboard = createStoryboard();
 
 

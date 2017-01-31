@@ -1,9 +1,11 @@
 // Builder - Script de controle da UI
 console.log("Scripts de formatação da interface do Builder iniciados");
 
-//Pega dados do STB gerado no HTML da Home
+//Pega dados do STB gerado no HTML da Home e injeta neste escopo
 var retrievedObject = localStorage.getItem('stb_local');
-console.log('objeto gravado: ', JSON.parse(retrievedObject));
+var storyboard = JSON.parse(retrievedObject);
+console.log(storyboard.curso);
+console.log(storyboard);
 
 // Controles do Menu
 $("#btn-salvar").click(function(){
@@ -13,7 +15,7 @@ $("#btn-salvar").click(function(){
 // Necessário colocar confirmação depois. 
 // Testar no Firefox
 $("#btn-limpar").click(function(){
-Location.reload();
+location.reload();
 });
 
 $("#btn-doc").click(function(){
@@ -47,8 +49,14 @@ $( ".drops" ).droppable({
       	var dragItem = eval(ui.draggable.attr("id"));
        	var dragItemImg = $(dragItem).find('img:first');
         $( this ).css("background-image","url('"+eval(dragItemImg).attr("src")+"')");
+        var elementoSelecionado = $(this).attr("id");
+        var elementoSelecionadoID = elementoSelecionado.substring(5,4);
+                
+
        /////////////////////////////////////////////////////////////////////////////////
        // Coloca a estrura selecionada na tela de edição
+       var idDoConteudoSelecionado = '#conteudo-tela'+elementoSelecionadoID;
+       $(idDoConteudoSelecionado).load('telas-reais/modelo1.html');      
        //Coloca a tela final com conteúdo no array de telas 
         storyboard.contents.push ("conteudo-primera-tela");
       
@@ -56,4 +64,11 @@ $( ".drops" ).droppable({
 });
 
 
+
+
+
+// Ao clicar na minituara dos modelos, é exibido um modelo em tela cheia.
+$("#modelo1").click(function(){
+	console.log("mostrou ");
+});
 
