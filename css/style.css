@@ -8,9 +8,16 @@ background-image: url('../imgs/bg1.jpg');
 color: white;
 }
 
-button{
-
+p{
+line-height: 30px;
 }
+
+h3{
+font-size: 16px;	
+}
+
+
+
 
 #home-container{
 	width: 100%;
@@ -20,44 +27,49 @@ button{
 	text-align: center;   
 }
 
-
-
-/*button{
-	font-family:'Fira Sans';
-	padding: 1.25rem 2.5rem;
-	background-color: #FF8000;
-	font-size: 1.125rem;
-	border: none;
-	color: white;
-	cursor: pointer;
-	margin:auto;
-}*/
-
-/*.btn-style1{
-	background-color: transparent;
-	border-width: 1px;
-	border-style: solid;
-	border-color: white;
-	cursor: pointer;
-	display: block;
-	margin-top: 10px;
-	width: 300px;
-}	*/
-
 #layout-container {
 	max-width: 990px; 
 }
 
 .telas{
 	
-	margin: 0px;
+	margin: 5px;
 	width:  990px;
 	height: 470px;
-	padding: 10px;
+	padding: 5px;
 	color: white;
 	border-style: solid;
 	border-color: white;
+	z-index: 9997 !important;
+}
 
+.telas-selecionadas{
+background-color: gray;
+width: 100px;
+height: 51px;
+position: absolute;
+z-index: 9990;
+left: 0px;
+top: 0px;
+}
+
+.tela-editavel{
+	cursor: pointer;
+}
+
+
+.stb-telas{
+width: 743px;
+height: 379px;
+border-style: solid;
+border-width: thin;
+text-align: center;
+vertical-align: middle;
+}
+
+.stb-telas p{
+font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
+font-size: 14px;
 }
 
 #capa-de-curso{
@@ -78,14 +90,6 @@ button{
     margin-top: -200px;
 }
 
-p{
-
-	line-height: 30px;
-}
-
-h3{
-font-size: 16px;	
-}
 
 #orientacoes{
 	color: #000;
@@ -98,30 +102,11 @@ font-size: 16px;
 	border-width: thin;
 	border-width: 1px;
 
-
 }
 
-.telas {
-padding: 5px;
-margin: 5px;
-z-index: 9997 !important;
-}
 
-#menu-telas{
-}
 
-#menu-opcoes{
-}
 
-.telas-selecionadas{
-background-color: gray;
-width: 100px;
-height: 51px;
-position: absolute;
-z-index: 9990;
-left: 0px;
-top: 0px;
-}
 
 .fancybox-overlay{
 z-index: 9999!important;	
@@ -134,24 +119,9 @@ z-index: 9999!important;
 
 
 
-.tela-editavel{
-	cursor: pointer;
-}
 
 
-.stb-telas{
-width: 743px;
-height: 379px;
-border-style: solid;
-border-width: thin;
-text-align: center;
-vertical-align: middle;
-}
 
-.stb-telas p{
-font-family: 'Fira Sans',Tahoma,Arial,sans-serif;
-font-size: 14px;
-}
 
 #builder-container{
 	width: 100%;
@@ -183,9 +153,7 @@ background-color: #a6a6a6;
 }
 
 #form_inicial{
-background-color: #fff;
 color: black;
-
 opacity: 0.9;
 display:none;
 }
@@ -231,7 +199,7 @@ margin-top: 150px;
 float: none;
 clear: both;
 bottom: 0px;
-margin-top: 50px;
+margin-top: 10px;
 }
 
 #modelos-disponíveis{
@@ -244,4 +212,12 @@ clear: both;
 	background-color: #fff;
 	opacity: 0.9;
 	color: #000;
+}
+
+.conteudo-telas{
+	display: none;
+}
+
+#stb-final{
+	display: none !important;
 }

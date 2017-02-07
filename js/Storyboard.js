@@ -1,5 +1,3 @@
-console.log("Classe Storyboard inicializada...");
-
 //Classe que cria um objeto do tipo Storyboard
 function createStoryboard(){
 var storyboard = new Object();  

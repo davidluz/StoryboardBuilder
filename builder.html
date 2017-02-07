@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/FileSaver.js"></script>
+<script src="js/jquery.wordexport.js"></script>
+
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
@@ -24,16 +27,16 @@
 
 <div id="modelos-disponiveis">
 	
-	<div id="modelo1"  class="modelos-de-tela draggable"><img src="imgs/telas/abertura_small.png"></div>
-	<div id="modelo2"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo1_small.png"></div>
-	<div id="modelo3"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo2_small.png"></div>
-	<div id="modelo4"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo3_small.png"></div>
-	<div id="modelo5"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo4_small.png"></div>
-	<div id="modelo6"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo5_small.png"></div>
-	<div id="modelo7"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo6_small.png"></div>
-	<div id="modelo8"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo7_small.png"></div>
-	<div id="modelo9"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo8_small.png"></div>
-	<div id="modelo10" class="modelos-de-tela draggable"><img src="imgs/telas/conteudo9_small.png"></div>
+	<div id="modelo0"  class="modelos-de-tela draggable"><img src="imgs/telas/abertura_small.png"></div>
+	<div id="modelo1"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo1_small.png"></div>
+	<div id="modelo2"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo2_small.png"></div>
+	<div id="modelo3"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo3_small.png"></div>
+	<div id="modelo4"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo4_small.png"></div>
+	<div id="modelo5"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo5_small.png"></div>
+	<div id="modelo6"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo6_small.png"></div>
+	<div id="modelo7"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo7_small.png"></div>
+	<div id="modelo8"  class="modelos-de-tela draggable"><img src="imgs/telas/conteudo8_small.png"></div>
+	<div id="modelo9" class="modelos-de-tela draggable"><img src="imgs/telas/conteudo9_small.png"></div>
 
 
 
@@ -106,6 +109,7 @@
 	<div id="conteudo-tela30" class="conteudo-telas"></div>
 	
 </div>
+<div id="stb-final"></div>
 
 <div id="controles">
 <button id="btn-salvar" class="btn waves-effect waves-light">Salvar Projeto</button>
@@ -133,4 +137,5 @@
 
 <script src="js/main.js"></script>
 <script src="js/builder.js"></script>
+<script src="js/html2table.js"></script>
 </html>

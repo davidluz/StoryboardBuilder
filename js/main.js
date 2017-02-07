@@ -10,17 +10,12 @@ $("#btn_novo").fancybox({
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false
-    });
-
-
-
-
+});
 
 
 
 
 // Lógica da Persistência - Retirar Daqui
-
 function saveSTB(){
 var stb_local = storyboard;
 localStorage.setItem('stb_local', JSON.stringify(stb_local));
@@ -34,7 +29,11 @@ storyboard.curso =    $("input[name=stb-curso]").val();
 storyboard.modulo =   $("input[name=stb-modulo]").val();
 storyboard.objetivo = $("input[name=stb-objetivo]").val();
 storyboard.modelo =   $( "#stb-modelo" ).val();
-saveSTB();
+storyboard.arquivoNome = storyboard.demanda+"-17.STB.C.1.modulo"+storyboard.modulo;
+
+
+
+saveSTB(); 
 window.open("builder.html", "_self");
 
 });
