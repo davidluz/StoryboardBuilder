@@ -93,13 +93,14 @@ for (i = 1; i <= 30; i++) {
   var temp2 = "#conteudo-tela" + i;
 
   $(temp1).fancybox({
+    'autoSize': false,
     'href': temp2,
-    'width': '900px',
-    'height': '700px',
+    'width': '1050px',
+    'height': '100%',
     'titleShow': false,
     'transitionIn': 'elastic',
-    'transitionOut': 'elastic',
-    'autoSize': false
+    'transitionOut': 'elastic'
+   
   });
 
 
