@@ -1,6 +1,8 @@
 // Lembrar que este Array começa em 1
 conteudosDasTelas = [];
 modelosDasTelas = [];
+var telasAtualizadas;
+var tempModelo;
 
 
 // Temp - clear wamp
@@ -28,12 +30,11 @@ $("#btn-limpar").click(function() {
   location.reload();
 });
 
-$("#btn-doc").click(function() {
-  montaSTBcompleto();
-
-
+$("#btn-doc").unbind().click(function(event) {
 
 });
+
+
 
 $("#btn-pdf").click(function() {
 
@@ -72,17 +73,10 @@ $(".drops").droppable({
     var dragItemID = ui.draggable.attr("id");
     $(idDoConteudoSelecionado).load('telas-reais/'+dragItemID+'.html');
     $('.conteudo-telas').hide();
+  
+  atualizaConteudos();
 
-    //Pega os elementos de todas as páginas e coloca no Array que irá para o HTMLtoTAble
-    for (i = 1; i <= 30; i++) {
-      var temp = '#conteudo-tela' + i;
-      conteudosDasTelas[i] = $(temp);
-
-
-      // Olha todas as páginas, vê qual o modelo gravado para informar ao html2Table que modelo usar para formatação
-      var tempModelo = $(temp).find(':nth-child(1)').attr("data-modelo");
-      modelosDasTelas[i] = tempModelo;
-    }
+ 
 
 
 
@@ -110,4 +104,18 @@ for (i = 1; i <= 30; i++) {
 
 
 }
+
+   function atualizaConteudos(){
+    //Pega os elementos de todas as páginas e coloca no Array que irá para o HTMLtoTAble
+    for (i = 1; i <= 30; i++) {
+      var telasAtualizadas = '#conteudo-tela' + i;
+      conteudosDasTelas[i] = $(telasAtualizadas);
+      // Olha todas as páginas, vê qual o modelo gravado para informar ao html2Table que modelo usar para formatação
+      var tempModelo = $(telasAtualizadas).find(':nth-child(1)').attr("data-modelo");
+      modelosDasTelas[i] = tempModelo;
+    }
+
+
+  
+  }
 
