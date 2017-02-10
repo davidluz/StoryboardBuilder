@@ -51,14 +51,23 @@ $("#btn-voltar").click(function() {
 
 
 $(".draggable").draggable({
-  revert: true
+  revert: true,
+  start: function(e) { $(this).css('z-index', 9999)},
+  stop:  function(e) { $(this).css('z-index', 0)}
 });
 
 $(".drops").droppable({
   drop: function(event, ui) {
 
+
+
     //Muda a minuatura que item dropou
     var dragItem = eval(ui.draggable.attr("id"));
+    var elementType = ui.draggable.attr("data-type");
+
+
+   
+   if(elementType=="drag"){
 
     var dragItemImg = $(dragItem).find('img:first');
     $(this).css("background-image", "url('" + eval(dragItemImg).attr("src") + "')");
@@ -76,11 +85,22 @@ $(".drops").droppable({
   
   atualizaConteudos();
 
- 
-
-
-
   }
+
+   if(elementType=="drop"){
+
+      $(this).insertBefore(dragItem);
+  }
+
+  
+  }
+});
+
+$(".drops").draggable({
+    revert: true,
+    start: function(e) { $(this).css('z-index', 9999)},
+    stop:  function(e) { $(this).css('z-index', 0)}
+
 });
 
 
