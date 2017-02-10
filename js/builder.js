@@ -63,7 +63,7 @@ $(".drops").droppable({
     var dragItemImg = $(dragItem).find('img:first');
     $(this).css("background-image", "url('" + eval(dragItemImg).attr("src") + "')");
     var elementoSelecionado = $(this).attr("id");
-    var elementoSelecionadoID = elementoSelecionado.substring(5, 4);
+    var elementoSelecionadoID = elementoSelecionado.substring(6, 4);
 
 
 
