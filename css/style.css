@@ -245,3 +245,60 @@ font-size: 1.125rem;
     padding: 0px;
     white-space: nowrap;
 }
+
+/* Formatação das telas fakes */
+#tutorial-de-curso{
+	background-image: url("../imgs/bg2.jpg");
+}
+
+#tutorial-de-curso h1{
+	text-shadow: 0 4px 6px rgba(0,0,0,.3);
+}
+
+#tutorial-de-curso p{
+	text-shadow: 0 4px 6px rgba(0,0,0,.3);
+}
+
+#objetivo-de-curso{
+	background-color: #ffd3c1;
+	color: #000000;
+	text-align: left;
+	padding: 10px;
+}
+
+#objetivo-de-curso #coluna1{
+	position: relative;
+	width: 50%;
+	text-align: left;
+    float: left;
+	clear: both;
+}
+
+#objetivo-de-curso #coluna2{
+	width: 50%;	
+	position: relative;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -10px;
+
+}
+
+#objetivo-de-curso p{
+	line-height: 0px
+	color: #fff;
+
+}
+
+
+.btn {
+   width: 300px;
+}
+
+#objetivo-de-curso #coluna1 h3{
+	font-weight: bold;
+}
+
+body{
+	list-style-type: circle;
+}
