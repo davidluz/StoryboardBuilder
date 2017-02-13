@@ -280,7 +280,7 @@ font-size: 1.125rem;
     float: left;
     margin: 0px;
     padding: 0px;
-    margin-top: -10px;
+    margin-top: -77px;
 
 }
 
@@ -297,8 +297,55 @@ font-size: 1.125rem;
 
 #objetivo-de-curso #coluna1 h3{
 	font-weight: bold;
+	font-family: Roboto,Arial,sans-serif;
+    color: #304054;
+    line-height: 140%;
+    font-size: 25px;
 }
 
-body{
-	list-style-type: circle;
+#capa-de-modulo{
+background-image: url("../imgs/bg3.png");
+}
+
+#capa-de-modulo{
+background-image: url("../imgs/bg3.png");
+}
+
+
+
+
+#objetivo-de-modulo{
+	background-color: #ffd3c1;
+	color: #000000;
+	text-align: left;
+	padding: 10px;
+}
+
+#objetivo-de-modulo #coluna1{
+	position: relative;
+	width: 50%;
+	text-align: left;
+    float: left;
+	clear: both;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+#objetivo-de-modulo #coluna2{
+	width: 50%;	
+	float: left;
+    margin: 0px;
+    padding: 30px;
+   display: inline;
+
+  
+
+}
+
+#objetivo-de-modulo #coluna2 h3{
+	font-weight: bold;
+	font-family: Roboto,Arial,sans-serif;
+    color: #304054;
+    line-height: 140%;
+    font-size: 25px;
 }
