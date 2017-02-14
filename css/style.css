@@ -466,3 +466,8 @@ margin-left: 100px;
 .bx-viewport{
 min-height: 300px;
 }
+
+#contagem-de-telas{
+
+	display: none;
+}

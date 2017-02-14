@@ -41,7 +41,7 @@ $("#btn-pdf").click(function() {
 });
 
 $("#btn-contagem").click(function() {
-
+contarTelas();
 });
 
 // Necessário colocar confirmação depois. 
@@ -139,6 +139,7 @@ for (i = 1; i <= 30; i++) {
 
   
   }
+
 
 
    
