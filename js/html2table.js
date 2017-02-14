@@ -6,6 +6,7 @@ $("#stb-final").empty();
 // Parei aqui - lembrar que o esquema agora é o seguinte - Pega as infos diretos na tela de edição e decompõe aqui - não existe mais uma camada intermediária 
 
 for (i=1; i<=30; i++){
+	
 var numero_tela = i;
 var temp = '#conteudo-tela'+i;
 
@@ -117,10 +118,12 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
-					
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
+					<p id="t1-ctn">` + modelo_final[2] + `</p>
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
 					</table><br>`; 
 
@@ -156,10 +159,13 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
+					<p id="t1-ctn">` + modelo_final[2] + `</p>
 					
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
 					</table><br>`; 
 
@@ -195,10 +201,13 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
+					<p id="t1-ctn">` + modelo_final[2] + `</p>
 					
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
 					</table><br>`; 
 
@@ -233,10 +242,12 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
 					
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					</td></tr> 
 					</table><br>`; 
 
@@ -270,10 +281,12 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
 					
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					</td></tr> 
 					</table><br>`; 
 
@@ -289,7 +302,7 @@ modelo_final[0] = $(temp).find('#M7Element0').html();
 modelo_final[1] = $(temp).find('#M7Element1').html();
 modelo_final[2] = $(temp).find('#M7Element2').html();
 modelo_final[3] = $(temp).find('#M7Element3').html();
-
+modelo_final[4] = $(temp).find('#M7Element4').html();
 
 
 
@@ -308,10 +321,13 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
+					<p id="t1-ctn">` + modelo_final[2] + `</p>
 					
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
 					</table><br>`; 
 
@@ -348,10 +364,14 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
-					
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
+					<p id="t1-ctn">` + modelo_final[2] + `</p>
+					<p id="t1-ctn">` + modelo_final[3] + `</p>
+					<p id="t1-ctn">` + modelo_final[4] + `</p>
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[5] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[6] + `</p>
 					</td></tr> 
 					</table><br>`; 
 
@@ -366,7 +386,7 @@ var modelo_final = [];
 modelo_final[0] = $(temp).find('#M9Element0').html();
 modelo_final[1] = $(temp).find('#M9Element1').html();
 modelo_final[2] = $(temp).find('#M9Element2').html();
-modelo_final[3] = $(temp).find('#M9Element3').html();
+
 
 
 
@@ -386,10 +406,12 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
 					
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
+				
 					</td></tr> 
 					</table><br>`; 
 
