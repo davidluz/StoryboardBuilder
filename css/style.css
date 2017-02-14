@@ -307,9 +307,6 @@ font-size: 1.125rem;
 background-image: url("../imgs/bg3.png");
 }
 
-#capa-de-modulo{
-background-image: url("../imgs/bg3.png");
-}
 
 
 
@@ -337,9 +334,6 @@ background-image: url("../imgs/bg3.png");
     margin: 0px;
     padding: 30px;
    display: inline;
-
-  
-
 }
 
 #objetivo-de-modulo #coluna2 h3{
@@ -348,4 +342,127 @@ background-image: url("../imgs/bg3.png");
     color: #304054;
     line-height: 140%;
     font-size: 25px;
+}
+
+
+
+#conteudo-modelo1{
+	background-color: #ffd3c1;
+	color: #000000;
+	text-align: left;
+	padding: 10px;
+}
+
+#conteudo-modelo1 #coluna1{
+    position: relative;
+    width: 50%;
+    text-align: left;
+    float: left;
+    clear: both;
+   padding: 20px;
+}
+
+#conteudo-modelo1 #coluna2{
+    width: 50%;
+    float: left;
+    margin: 0px;
+    /* padding: 30px; */
+    margin-top: -11px;
+    display: inline;
+}
+
+#conteudo-modelo1 #coluna2 h3{
+	font-weight: bold;
+	font-family: Roboto,Arial,sans-serif;
+    color: #304054;
+    line-height: 140%;
+    font-size: 25px;
+}
+
+
+#conteudo-modelo2{
+	background-color: #ffd3c1;
+	color: #000000;
+	text-align: left;
+	padding: 10px;
+}
+
+#conteudo-modelo2 #coluna1{
+   position: relative;
+    width: 50%;
+    text-align: left;
+    float: left;
+    /* clear: both; */
+    padding: 20px;
+}
+
+#conteudo-modelo2 #coluna2{
+width: 50%;
+    float: left;
+    margin: 0px;
+    /* padding: 30px; */
+    margin-top: -10px;
+    display: inline;
+    margin-left: -10px;
+
+}
+
+#conteudo-modelo2 #coluna2 h3{
+	font-weight: bold;
+	font-family: Roboto,Arial,sans-serif;
+    color: #304054;
+    line-height: 140%;
+    font-size: 25px;
+}
+
+.texto-sombra {
+    text-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+
+#fim-de-modulo{
+background-image: url("../imgs/bg4.jpg");
+
+}
+
+#fim-de-modulo p{
+font-size: 20px;
+
+}
+
+#atividade1{
+background-image: url("../imgs/bg4.png");
+padding: 30px;
+
+}
+
+
+
+#atividade1 #coluna1{
+	width: 100%;
+	
+}
+
+#subtela-modelo1 p{
+   width: 100% !important;
+}
+
+#subtela-modelo1 li{
+   width: 100% !important;
+}
+
+#subtela-modelo1{
+		background-image: url("../imgs/bg3.png");
+
+		padding: 80px;
+}
+
+
+ #subtela-modelo1 #coluna1{
+width: 80%;
+color: #000;
+margin-left: 100px;
+}
+
+.bx-viewport{
+min-height: 300px;
 }

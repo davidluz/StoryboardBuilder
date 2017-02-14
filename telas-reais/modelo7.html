@@ -1,33 +1,54 @@
-   <!-- Modelo de tela 1 Capa de curso-->
-	<div class="layout-container" data-modelo="0">
-	<div id="capa-de-curso" class="telas">
+
+  <script>
+
+   
+$('.bxslider').bxSlider({
+  adaptiveHeight: true,
+  mode: 'fade'
+});
+
+   
+</script>
+
+  <!-- Modelo de tela 1 Capa de curso-->
+	<div class="layout-container" data-modelo="7">
+	<div id="subtela-modelo1" class="telas">
+	
 		
-		<h1 class="centralizado" contenteditable="true" id="M0element0">Bem-vindo ao curso<br> {{Nome do curso}}</h1>
-		<p class="centralizado" contenteditable="true" id="M0element1">Neste curso, você vai {{Objetivo do curso}}<br><br><br>
-		</p>
 		
-		<div class="btn-alinhamento"><button id="btnHome" class="button" >Iniciar curso</button></div>			
+	<div id="coluna1">  
+
+ <ul class="bxslider">
+  <li><p contenteditable="true" id="M7Element0">Insira o conteúdo da primeira subtela</p></li>
+  <li><p contenteditable="true" id="M7Element1">Insira o conteúdo da segunda subtela</p></li>
+  <li><p contenteditable="true" id="M7Element2">Insira o conteúdo da terceira subtela</p></li>
+  
+</ul>
+
+
+
+		</div>
+
+	
 
 	</div>
 	<div id="orientacoes">
 		<h3>Orientações Gerais:</h3>
-		<p contenteditable="true"  id="M0element2">1. Aplicar diagramação padrão de tela de abertura de curso.</p>
+		<p contenteditable="true"  id="M7Element3">1. Aplicar diagramação padrão de tela de abertura de curso.</p>
 		<h3>Descrição das imagens</h3>
-		<p contenteditable="true"  id="M0element3">2. Inserir imagem de fundo que dê a ideia de {{inserir informação}}. Referência: shutterstock ID:<span id="id-shutter">{{id da imagem}}</span> </p>
+		<p contenteditable="true"  id="M7Element4">2. Inserir imagem de fundo que dê a ideia de {{inserir informação}}. Referência: shutterstock ID:<span id="id-shutter">{{id da imagem}}</span> </p>
 		
 	</div>
 
 
 
 	</div>
-<script>
-	
-$("#capa-de-curso").click(function(){
-console.log($("#id-shutter").html());
 
-});
 
-</script>
+
+
+
+
 
 
 

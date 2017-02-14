@@ -1,6 +1,4 @@
-
 var storyboard = createStoryboard();
-
 
 $("#btn_novo").fancybox({
         'href'   : '#form_inicial',
