@@ -3,7 +3,7 @@ function createStoryboard(){
 var storyboard = new Object();  
 storyboard.id =  "Insira o número da demanda";
 storyboard.demanda = 0;
-storyboard.curso =  "Nome do curso";
+storyboard.curso =  $("input[name=stb-curso]").val();
 storyboard.modulo = "Módulo";
 storyboard.objetivo = "inserir objetivo";
 storyboard.modelo = "inserir modelo";

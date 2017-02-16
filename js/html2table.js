@@ -407,7 +407,7 @@ var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
 contagemDeTelas.push(telaParaContagemAtual);
 
 var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
-					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`'A'</strong></p>
 					</td>
 					</tr>
 					<tr>
@@ -421,15 +421,65 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
-					<p id="t1-ctn">` + modelo_final[1] + `</p>
-					<p id="t1-ctn">` + modelo_final[2] + `</p>
+				
 					
 					</td>
 					<td rowspan="2" width="324">
 					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
-					</table><br>`; 
+					</table><br>
+
+					<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`'B'</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
+				
+					
+					</td>
+					<td rowspan="2" width="324">
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
+					</td></tr> 
+					</table><br>
+
+					<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`'C'</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+				
+					<p id="t1-ctn">` + modelo_final[2] + `</p>
+				
+					
+					</td>
+					<td rowspan="2" width="324">
+					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
+					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
+					</td></tr> 
+					</table><br>
+
+					`; 
 
 
 					$("#stb-final").append(stbMontado);  
