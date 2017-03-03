@@ -56,6 +56,50 @@ $(".draggable").draggable({
   stop:  function(e) { $(this).css('z-index', 0)}
 });
 
+$(".trash").droppable({
+drop: function(event, ui) {
+
+
+
+//Muda a minuatura que item dropou
+    var dragItem = eval(ui.draggable.attr("id"));
+    var elementType = ui.draggable.attr("data-type");
+
+   
+   if(elementType=="drop"){
+  
+    var dragItemImg = $(dragItem).find('img:first');
+    $(dragItem).css("background-image","none");
+    var elementoSelecionado = $(dragItem).attr("id");
+    var elementoSelecionadoID = elementoSelecionado.substring(6, 4);
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////
+    // Remove a estrura selecionada na tela de edição
+    var idDoConteudoSelecionado = '#conteudo-tela' + elementoSelecionadoID;
+    var dragItemID = ui.draggable.attr("id");
+    console.log(idDoConteudoSelecionado);
+    $(idDoConteudoSelecionado).html('tela vazia');
+    $('.conteudo-telas').hide();
+  
+  atualizaConteudos();
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+ });
+
+
 $(".drops").droppable({
   drop: function(event, ui) {
 
@@ -102,6 +146,8 @@ $(".drops").draggable({
     stop:  function(e) { $(this).css('z-index', 0)}
 
 });
+
+
 
 
 

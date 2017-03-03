@@ -2,20 +2,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui.min"></script>
 <script src="js/FileSaver.js"></script>
 <script src="js/jquery.wordexport.js"></script>
 
 <!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<link rel="stylesheet" href="css/materialize.min.css">
 
 <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script src="js/materialize.min.js"></script>
 
 
-<link rel="stylesheet" href="libs/jquery.fancybox.css">
-<script src="libs/jquery.fancybox.js"></script>
+<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
+<script src="plugins/fancybox/jquery.fancybox.js"></script>
 <title>Gerador de Storyboard</title>
 
 </head>
@@ -74,6 +74,7 @@
 	<div id="drop28" class="drops" data-type="drop" data-position="28"></div>
 	<div id="drop29" class="drops" data-type="drop" data-position="29"></div>
 	<div id="drop30" class="drops" data-type="drop" data-position="30"></div>
+	<div id="drop31" class="trash" data-type="drop" data-position="31"><img src="imgs/trash.png"></div>
 </div>
 
 <!-- São Preenchidos dinamicamente -->
@@ -114,7 +115,7 @@
 
 <div id="controles">
 <button id="btn-salvar" class="btn waves-effect waves-light disabled">Salvar Projeto</button>
-<button id="btn-limpar" class="btn waves-effect waves-light" >Limpar</button>
+<button id="btn-limpar" class="btn waves-effect waves-light" >Limpar Tudo</button>
 
 <button id="btn-doc" class="btn waves-effect waves-light" >Exportar (.doc)</button><br><br>
 <button id="btn-contagem" class="btn waves-effect waves-light" >Contagem de Telas</button>

@@ -471,3 +471,21 @@ min-height: 300px;
 
 	display: none;
 }
+
+#drop31{
+	background-color: #f44336;
+}
+
+#drop31 img{
+   padding: 10px;
+}
+
+.trash{
+	background-color: #bdc3c7;
+	width: 100px;
+	height: 51px;
+	margin: 10px;
+	float: left;
+	display: inline;
+	cursor: pointer;
+}

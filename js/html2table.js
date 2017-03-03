@@ -611,6 +611,7 @@ if(contagemDeTelas.length==0){
 
 }
 else{
+	
  for(i=0; i<contagemDeTelas.length; i++){
  $("#contagem-de-telas").append('<p>'+contagemDeTelas[i]+'</p>');
  }
