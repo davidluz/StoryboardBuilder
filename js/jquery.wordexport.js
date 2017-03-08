@@ -31,24 +31,37 @@ if (typeof jQuery !== "undefined" && typeof saveAs !== "undefined") {
                 var h = img[i].height * (w / img[i].width);
                 // Create canvas for converting image to data URL
                 var canvas = document.createElement("CANVAS");
+
                 canvas.width = w;
                 canvas.height = h;
                 // Draw image to canvas
+
                 var context = canvas.getContext('2d');
                 context.drawImage(img[i], 0, 0, w, h);
+
+
+
                 // Get data URL encoding of image
                 var uri = canvas.toDataURL("image/png");
                 $(img[i]).attr("src", img[i].src);
                 img[i].width = w;
                 img[i].height = h;
-                // Save encoded image to array
+                // Save encoded image to array               
+                
+               
                 images[i] = {
                     type: uri.substring(uri.indexOf(":") + 1, uri.indexOf(";")),
                     encoding: uri.substring(uri.indexOf(";") + 1, uri.indexOf(",")),
                     location: $(img[i]).attr("src"),
                     data: uri.substring(uri.indexOf(",") + 1)
                 };
+
+
+                $('<canvas>').attr("id", "jQuery-Word-export_img_" + i).width(w).height(h).appendTo($(this));
+                // Linha com correção do bug da imagem
+                
             }
+         
 
             // Prepare bottom of mhtml file with image data
             var mhtmlBottom = "\n";

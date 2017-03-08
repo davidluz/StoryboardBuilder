@@ -57,6 +57,7 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<p id="t1-ctn">` + modelo_final[1] + `</p>
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t0.png">
 					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
 					<p id="t1-orientacao2">` + modelo_final[3] + `</p>
 					</td></tr> 
@@ -109,6 +110,7 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t1.png">
 					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
 					</td></tr> 
 					</table><br>`; 
@@ -163,6 +165,7 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<p id="t1-ctn">` + modelo_final[2] + `</p>
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t2.png">
 					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
@@ -217,6 +220,7 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t3.png">
 					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
@@ -265,12 +269,14 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					</tr>
 					<tr>
 					<td rowspan="2" width="657">
+					
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
 					<p id="t1-ctn">` + modelo_final[1] + `</p>
 					<p id="t1-ctn">` + modelo_final[2] + `</p>
 					
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t4.png">
 					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
@@ -313,15 +319,16 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					</td>
 					<td width="324">
 					<p><strong>Orientações para produção</strong></p>
-					</td>
+										</td>
 					</tr>
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
-					<p id="t1-ctn">` + modelo_final[1] + `</p>
+				
 					
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t5.png">
 					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
 					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					</td></tr> 
@@ -368,11 +375,13 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					</tr>
 					<tr>
 					<td rowspan="2" width="657">
+					
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
-					<p id="t1-ctn">` + modelo_final[1] + `</p>
+					
 					
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t6.png">
 					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
 					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					</td></tr> 
@@ -416,22 +425,25 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					</td>
 					<td width="324">
 					<p><strong>Orientações para produção</strong></p>
+					
 					</td>
 					</tr>
 					<tr>
 					<td rowspan="2" width="657">
+					
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
 				
 					
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t7.png">
 					<p id="t1-orientacao1">` + modelo_final[3] + `</p>
 					<p id="t1-orientacao1">` + modelo_final[4] + `</p>
 					</td></tr> 
 					</table><br>
 
 					<table border="1"> <tr> <td colspan="2" width="992"> 
-					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`'B'</strong></p>
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+`Subtela`+`'B'</strong></p>
 					</td>
 					</tr>
 					<tr>
@@ -455,7 +467,7 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					</table><br>
 
 					<table border="1"> <tr> <td colspan="2" width="992"> 
-					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`'C'</strong></p>
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+`Subtela`+`'C'</strong></p>
 					</td>
 					</tr>
 					<tr>
@@ -496,6 +508,8 @@ modelo_final[3] = $(temp).find('#M8Element3').html();
 modelo_final[4] = $(temp).find('#M8Element4').html();
 modelo_final[5] = $(temp).find('#M8Element5').html();
 modelo_final[6] = $(temp).find('#M8Element6').html();
+modelo_final[7] = $(temp).find('#M8Element7').html();
+modelo_final[8] = $(temp).find('#M8Element8').html();
 
 var tipoDeTela =  $(temp).find('#tela-tipo').val();
 if(tipoDeTela==1){
@@ -532,8 +546,31 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<p id="t1-ctn">` + modelo_final[4] + `</p>
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[5] + `</p>
+					<img src="imgs/t8.png">
+					<p id="t1-orientacao1">` + modelo_final[5] + `</p><img src="imgs/t0.png">
 					<p id="t1-orientacao1">` + modelo_final[6] + `</p>
+					</td></tr> 
+					</table><br><table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+` (Feedback)</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Feedback da atividade</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+					<p id="t1-ctn">` + modelo_final[7] + `</p>
+					
+					
+					</td>
+					<td rowspan="2" width="324">
+					<p id="t1-orientacao1">` + modelo_final[8] + `</p>
+				
 					</td></tr> 
 					</table><br>`; 
 
@@ -583,10 +620,12 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					
 					</td>
 					<td rowspan="2" width="324">
+					<img src="imgs/t9.png">
 					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
 				
 					</td></tr> 
-					</table><br>`; 
+					</table><br>
+					`; 
 
 
 					$("#stb-final").append(stbMontado);  
@@ -596,7 +635,10 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 }
 
 
-$("#stb-final").wordExport(storyboard.arquivoNome);
+
+
+setTimeout(function(){ $("#stb-final").wordExport(storyboard.arquivoNome); }, 2000);
+
  
 
 

@@ -489,3 +489,7 @@ min-height: 300px;
 	display: inline;
 	cursor: pointer;
 }
+
+#drop31{
+	cursor: default;
+}
