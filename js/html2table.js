@@ -161,7 +161,6 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<tr>
 					<td rowspan="2" width="657">
 					<p id="t1-ctn">` + modelo_final[0] + `</p>
-					<p id="t1-ctn">` + modelo_final[1] + `</p>
 					<p id="t1-ctn">` + modelo_final[2] + `</p>
 					</td>
 					<td rowspan="2" width="324">
@@ -546,9 +545,9 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					<p id="t1-ctn">` + modelo_final[4] + `</p>
 					</td>
 					<td rowspan="2" width="324">
-					<img src="imgs/t8.png">
-					<p id="t1-orientacao1">` + modelo_final[5] + `</p><img src="imgs/t0.png">
-					<p id="t1-orientacao1">` + modelo_final[6] + `</p>
+					
+					<p id="t1-orientacao1">` + modelo_final[5] + `</p>
+				
 					</td></tr> 
 					</table><br><table border="1"> <tr> <td colspan="2" width="992"> 
 					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+` (Feedback)</strong></p>
@@ -569,7 +568,7 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 					
 					</td>
 					<td rowspan="2" width="324">
-					<p id="t1-orientacao1">` + modelo_final[8] + `</p>
+				
 				
 					</td></tr> 
 					</table><br>`; 
@@ -632,12 +631,391 @@ var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992">
 	
 }
 
+
+if(tempModelo==10){
+
+var modelo_final = [];
+modelo_final[0] = $(temp).find('#M10Element0').html();
+modelo_final[1] = $(temp).find('#M10Element1').html();
+modelo_final[2] = $(temp).find('#M10Element2').html();
+
+var tipoDeTela =  $(temp).find('#tela-tipo').val();
+if(tipoDeTela==1){
+tipoDeTela ='Nova';
+}
+if(tipoDeTela==2){
+tipoDeTela ='Atualizada';	
+}
+if(tipoDeTela==3){
+tipoDeTela ='Exercício';	
+}
+
+var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
+contagemDeTelas.push(telaParaContagemAtual);
+
+
+var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					
+					
+					</td>
+					<td rowspan="2" width="324">
+					<img src="imgs/telas/tela10_small.png">
+					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+				
+					</td></tr> 
+					</table><br>
+					`; 
+
+
+					$("#stb-final").append(stbMontado);  
+	
+}
+
+
+if(tempModelo==11){
+
+var modelo_final = [];
+modelo_final[0] = $(temp).find('#M11Element0').html();
+modelo_final[1] = $(temp).find('#M11Element1').html();
+modelo_final[2] = $(temp).find('#M11Element2').html();
+
+var tipoDeTela =  $(temp).find('#tela-tipo').val();
+if(tipoDeTela==1){
+tipoDeTela ='Nova';
+}
+if(tipoDeTela==2){
+tipoDeTela ='Atualizada';	
+}
+if(tipoDeTela==3){
+tipoDeTela ='Exercício';	
+}
+
+var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
+contagemDeTelas.push(telaParaContagemAtual);
+
+
+var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+					<p id="t1-ctn">` + modelo_final[0] + `</p>
+					<p id="t1-ctn">` + modelo_final[1] + `</p>
+					
+					</td>
+					<td rowspan="2" width="324">
+					<img src="imgs/telas/tela11_small.png">
+					<p id="t1-orientacao1">` + modelo_final[2] + `</p>
+				
+					</td></tr> 
+					</table><br>
+					`; 
+
+
+					$("#stb-final").append(stbMontado);  
+	
+}
+
+if(tempModelo==12){
+
+var modelo_final = [];
+modelo_final[0] = $(temp).find('#M12Element0').html();
+modelo_final[1] = $(temp).find('#M12Element1').html();
+
+
+var tipoDeTela =  $(temp).find('#tela-tipo').val();
+if(tipoDeTela==1){
+tipoDeTela ='Nova';
+}
+if(tipoDeTela==2){
+tipoDeTela ='Atualizada';	
+}
+if(tipoDeTela==3){
+tipoDeTela ='Exercício';	
+}
+
+var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
+contagemDeTelas.push(telaParaContagemAtual);
+
+
+var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+					<p id="t1-ctn">` + modelo_final[0] + `</p>
+				
+					
+					</td>
+					<td rowspan="2" width="324">
+					<img src="imgs/telas/tela12_small.png">
+					<p id="t1-orientacao1">` + modelo_final[1] + `</p>
+				
+					</td></tr> 
+					</table><br>
+					`; 
+
+
+					$("#stb-final").append(stbMontado);  
+	
+}
+
+if(tempModelo==13){
+
+var modelo_final = [];
+modelo_final[0] = $(temp).find('#M13Element0').html();
+modelo_final[1] = $(temp).find('#M13Element1').html();
+modelo_final[2] = $(temp).find('#M13Element2').html();
+
+var tipoDeTela =  $(temp).find('#tela-tipo').val();
+if(tipoDeTela==1){
+tipoDeTela ='Nova';
+}
+if(tipoDeTela==2){
+tipoDeTela ='Atualizada';	
+}
+if(tipoDeTela==3){
+tipoDeTela ='Exercício';	
+}
+
+var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
+contagemDeTelas.push(telaParaContagemAtual);
+
+
+var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+					<img src="imgs/imagem2.png">
+				
+					
+					</td>
+					<td rowspan="2" width="324">
+					<img src="imgs/telas/tela13_small.png">
+					<p id="t1-orientacao1">` + modelo_final[0] + `</p>
+				
+					</td></tr> 
+					</table><br>
+					`; 
+
+
+					$("#stb-final").append(stbMontado);  
+	
+}
+
+if(tempModelo==14){
+
+var modelo_final = [];
+modelo_final[0] = $(temp).find('#M14Element0').html();
+modelo_final[1] = $(temp).find('#M14Element1').html();
+modelo_final[2] = $(temp).find('#M14Element2').html();
+
+var tipoDeTela =  $(temp).find('#tela-tipo').val();
+if(tipoDeTela==1){
+tipoDeTela ='Nova';
+}
+if(tipoDeTela==2){
+tipoDeTela ='Atualizada';	
+}
+if(tipoDeTela==3){
+tipoDeTela ='Exercício';	
+}
+
+var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
+contagemDeTelas.push(telaParaContagemAtual);
+
+
+var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+				    <img src="imgs/imagem2.png">
+					
+					</td>
+					<td rowspan="2" width="324">
+					<img src="imgs/telas/tela14_small.png">
+					<p id="t1-orientacao1">` + modelo_final[0] + `</p>
+				
+					</td></tr> 
+					</table><br>
+					`; 
+
+
+					$("#stb-final").append(stbMontado);  
+	
+}
+
+if(tempModelo==15){
+
+var modelo_final = [];
+modelo_final[0] = $(temp).find('#M15Element0').html();
+modelo_final[1] = $(temp).find('#M15Element1').html();
+modelo_final[2] = $(temp).find('#M15Element2').html();
+
+var tipoDeTela =  $(temp).find('#tela-tipo').val();
+if(tipoDeTela==1){
+tipoDeTela ='Nova';
+}
+if(tipoDeTela==2){
+tipoDeTela ='Atualizada';	
+}
+if(tipoDeTela==3){
+tipoDeTela ='Exercício';	
+}
+
+var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
+contagemDeTelas.push(telaParaContagemAtual);
+
+
+var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+				<img src="imgs/imagem2.png">
+					
+					</td>
+					<td rowspan="2" width="324">
+					<img src="imgs/telas/tela15_small.png">
+					<p id="t1-orientacao1">` + modelo_final[0] + `</p>
+				
+					</td></tr> 
+					</table><br>
+					`; 
+
+
+					$("#stb-final").append(stbMontado);  
+	
+}
+
+if(tempModelo==16){
+
+var modelo_final = [];
+modelo_final[0] = $(temp).find('#M16Element0').html();
+modelo_final[1] = $(temp).find('#M16Element1').html();
+modelo_final[2] = $(temp).find('#M16Element2').html();
+
+var tipoDeTela =  $(temp).find('#tela-tipo').val();
+if(tipoDeTela==1){
+tipoDeTela ='Nova';
+}
+if(tipoDeTela==2){
+tipoDeTela ='Atualizada';	
+}
+if(tipoDeTela==3){
+tipoDeTela ='Exercício';	
+}
+
+var telaParaContagemAtual = storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela;
+contagemDeTelas.push(telaParaContagemAtual);
+
+
+var stbMontado = `<table border="1"> <tr> <td colspan="2" width="992"> 
+					<p id="id-t1"><strong>M`+storyboard.modulo+`Tela`+numero_tela+' '+tipoDeTela+`</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td width="743">
+					<p><strong>Conteúdo da tela</strong></p>
+					</td>
+					<td width="324">
+					<p><strong>Orientações para produção</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td rowspan="2" width="657">
+				   <img src="imgs/imagem2.png">
+					
+					</td>
+					<td rowspan="2" width="324">
+					<img src="imgs/telas/tela16_small.png">
+					<p id="t1-orientacao1">` + modelo_final[0] + `</p>
+				
+					</td></tr> 
+					</table><br>
+					`; 
+
+
+					$("#stb-final").append(stbMontado);  
+	
 }
 
 
 
 
-setTimeout(function(){ $("#stb-final").wordExport(storyboard.arquivoNome); }, 2000);
+
+
+
+
+
+
+}
+
+
+
+
+setTimeout(function(){ $("#stb-final").wordExport(storyboard.arquivoNome+'_v1'); }, 5000);
 
  
 

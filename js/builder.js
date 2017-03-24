@@ -159,13 +159,20 @@ for (i = 1; i <= 30; i++) {
   var temp2 = "#conteudo-tela" + i;
 
   $(temp1).fancybox({
+    
     'autoSize': false,
     'href': temp2,
     'width': '1050px',
     'height': '100%',
     'titleShow': false,
     'transitionIn': 'elastic',
-    'transitionOut': 'elastic'
+    'transitionOut': 'elastic',
+    'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+     helpers : { 
+            overlay : {
+                closeClick: false
+            } // prevents closing when clicking OUTSIDE fancybox
+        }
    
   });
 

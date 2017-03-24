@@ -7,7 +7,13 @@ $("#btn_novo").fancybox({
         'titleShow'  : false,
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
-        'autoSize' : false
+        'autoSize' : false,
+        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+     helpers : { 
+            overlay : {
+                closeClick: false
+            } // prevents closing when clicking OUTSIDE fancybox
+        }
 });
 
 

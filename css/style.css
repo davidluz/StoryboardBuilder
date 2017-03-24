@@ -199,7 +199,7 @@ float: none;
 clear: both;
 background-color: #fff;
 min-height: 270px;
-margin-top: 150px;
+margin-top: 200px;
 }
 
 #controles{
@@ -493,3 +493,103 @@ min-height: 300px;
 #drop31{
 	cursor: default;
 }
+
+#md10{
+
+background-color: #ffd3c1;
+
+}
+
+#md10 p{
+
+color: #000;
+}
+
+
+#md11{
+
+background-color: #ffd3c1;
+
+}
+
+#md11 p{
+	margin-left:  50px;
+color: #000;
+float: left;
+max-width: 40%;
+
+}
+
+#md12{
+background-color: #ffd3c1;
+}
+
+#md12 p{
+margin-left:  80px;
+color: #000;
+float: left;
+max-width: 40%;
+}
+
+#md12 img{
+color: #000;
+float: left;
+max-width: 40%;
+margin-top: 30px;
+margin-left: 80px;
+}
+
+
+
+#md13{
+background-color: #ffd3c1;
+}
+
+#md13 p{
+margin-left:  80px;
+color: #000;
+float: left;
+max-width: 40%;
+}
+
+
+
+#md14{
+background-color: #ffd3c1;
+}
+
+#md14 p{
+margin-left:  80px;
+color: #000;
+float: left;
+max-width: 40%;
+}
+
+
+
+
+#md15{
+background-color: #ffd3c1;
+}
+
+#md15 p{
+margin-left:  80px;
+color: #000;
+float: left;
+max-width: 40%;
+}
+
+
+
+
+#md16{
+background-color: #ffd3c1;
+}
+
+#md16 p{
+margin-left:  80px;
+color: #000;
+float: left;
+max-width: 40%;
+}
+

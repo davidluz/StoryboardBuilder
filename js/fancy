@@ -1,0 +1,13 @@
+var telasParaGravar = [];
+
+function salvarSTB (){
+
+for(i=1; i<=30; i++){
+var numero_tela = i;
+var temp = '#conteudo-tela'+i;
+console.log($(temp).html());
+}
+
+}
+
+
